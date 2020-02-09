@@ -1,10 +1,11 @@
 #Big query pageviews
 
-import psycopg2 as pg
+from google.cloud import bigquery
+from google.oauth2 import service_account
 import pandas as pd
 import matplotlib.pyplot as plt
-import matplotlib.pyplot as plt
 %matplotlib inline
+
 
 def getting_credentials():
     credentials = service_account.Credentials.from_service_account_file('C:/Users/sachi/OneDrive/Desktop/Google_BigQuery/client_secret_358050000476-cn1c98do5mg0e43jvvvh3fgpklkdqlhs.apps.googleusercontent.com.json')
